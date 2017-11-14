@@ -37,7 +37,7 @@ for aluno in alunos:
     roboto22Bold = ImageFont.truetype("fonts/Roboto/Roboto-Bold.ttf", 22)
     print("Gerando o certificado de: " + aluno)
        
-    img = Image.open("template_certificado.png")
+    img = Image.open("templates/template_certificado.png")
     draw = ImageDraw.Draw(img)
     # font = ImageFont.truetype(<font-file>, <font-size>)
     # draw.text((x, y),"Sample Text",(r,g,b))
