@@ -5,7 +5,7 @@ from email.MIMEBase import MIMEBase
 from email import encoders
 
 def sendCertificate(name):
-    fromaddr = "contato@itsrio.org"
+    fromaddr = ""
     toaddr = "xdiegocerqueira@gmail.com"
     
     msg = MIMEMultipart()
@@ -30,7 +30,7 @@ def sendCertificate(name):
     
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login(fromaddr, "Vou mudar a senha")
+    server.login(fromaddr, "")
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     server.quit()
