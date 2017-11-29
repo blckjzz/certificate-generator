@@ -1,0 +1,4 @@
+class Aluno:
+
+    nome = ''
+    email = ''
